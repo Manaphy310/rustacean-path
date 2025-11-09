@@ -1,100 +1,100 @@
-# 🦀 Rustacean Path
+# Rustacean Path
 
-Rust初学者向けの学習プログラムです。基本文法をモジュール化された構造で段階的に学べます。
+A learning program for Rust beginners. Learn basic syntax in a structured, modular way step by step.
 
-## 📚 学習内容
+## Learning Contents
 
-このプロジェクトでは、以下のRustの基本概念を学ぶことができます：
+This project covers the following basic Rust concepts:
 
 1. **Hello World** (`src/basics/hello.rs`)
-   - `println!` マクロの使い方
-   - フォーマット付き出力
-   - デバッグ出力
+   - Using the `println!` macro
+   - Formatted output
+   - Debug output
 
-2. **変数と可変性** (`src/basics/variables.rs`)
-   - 不変変数と可変変数（`mut`）
-   - シャドーイング
-   - 定数（`const`）
-   - スコープ
+2. **Variables and Mutability** (`src/basics/variables.rs`)
+   - Immutable and mutable variables (`mut`)
+   - Shadowing
+   - Constants (`const`)
+   - Scope
 
-3. **データ型** (`src/basics/data_types.rs`)
-   - 整数型、浮動小数点型
-   - ブール型、文字型
-   - タプル型、配列型
-   - 文字列スライス
+3. **Data Types** (`src/basics/data_types.rs`)
+   - Integer types, floating-point types
+   - Boolean type, character type
+   - Tuple type, array type
+   - String slices
 
-4. **制御フロー** (`src/basics/control_flow.rs`)
-   - `if` 式
-   - `loop`、`while`、`for` ループ
-   - `match` 式（パターンマッチング）
-   - `break`、`continue`
+4. **Control Flow** (`src/basics/control_flow.rs`)
+   - `if` expressions
+   - `loop`, `while`, `for` loops
+   - `match` expressions (pattern matching)
+   - `break`, `continue`
 
-5. **関数** (`src/basics/functions.rs`)
-   - 関数の定義と呼び出し
-   - 引数と戻り値
-   - 式と文の違い
+5. **Functions** (`src/basics/functions.rs`)
+   - Function definition and calls
+   - Parameters and return values
+   - Difference between expressions and statements
 
-## 🚀 実行方法
+## How to Run
 
-### 前提条件
+### Prerequisites
 
-Rustがインストールされている必要があります。インストールされていない場合は、以下のコマンドでインストールしてください：
+Rust must be installed. If not installed, use the following command:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-### プログラムの実行
+### Running the Program
 
 ```bash
-# ビルドして実行
+# Build and run
 cargo run
 
-# リリースビルドで実行（最適化あり）
+# Run with release build (optimized)
 cargo run --release
 
-# ビルドのみ
+# Build only
 cargo build
 ```
 
-## 📁 プロジェクト構造
+## Project Structure
 
 ```
 rustacean-path/
-├── Cargo.toml              # プロジェクト設定ファイル
-├── README.md               # このファイル
+├── Cargo.toml              # Project configuration file
+├── README.md               # This file
 └── src/
-    ├── main.rs             # エントリーポイント
-    └── basics/             # 基本文法モジュール
-        ├── mod.rs          # モジュール定義
+    ├── main.rs             # Entry point
+    └── basics/             # Basic syntax module
+        ├── mod.rs          # Module definition
         ├── hello.rs        # Hello World
-        ├── variables.rs    # 変数と可変性
-        ├── data_types.rs   # データ型
-        ├── control_flow.rs # 制御フロー
-        └── functions.rs    # 関数
+        ├── variables.rs    # Variables and mutability
+        ├── data_types.rs   # Data types
+        ├── control_flow.rs # Control flow
+        └── functions.rs    # Functions
 ```
 
-## 🎓 学習の進め方
+## How to Learn
 
-1. まず `cargo run` でプログラムを実行して、各セクションの出力を確認しましょう
-2. 各モジュールのソースコード（`src/basics/` 内のファイル）を読んで、コメントと実装を理解しましょう
-3. コードを自分で変更して、動作を実験してみましょう
-4. エラーメッセージを恐れずに、いろいろ試してみましょう
+1. First, run `cargo run` to see the output of each section
+2. Read the source code in each module (files in `src/basics/`) and understand the comments and implementation
+3. Modify the code yourself and experiment with the behavior
+4. Don't be afraid of error messages - try different things
 
-## 📖 次のステップ
+## Next Steps
 
-基本文法を習得したら、以下のトピックに進むことをおすすめします：
+After mastering the basics, we recommend exploring these topics:
 
-- **所有権（Ownership）** - Rustの最も重要な概念
-- **構造体とenum** - 独自のデータ型を定義する
-- **エラーハンドリング** - `Result` と `Option` 型
-- **コレクション** - `Vec`、`HashMap`、`String` など
-- **モジュールシステム** - より大きなプログラムの構造化
+- **Ownership** - The most important concept in Rust
+- **Structs and Enums** - Defining custom data types
+- **Error Handling** - `Result` and `Option` types
+- **Collections** - `Vec`, `HashMap`, `String`, etc.
+- **Module System** - Structuring larger programs
 
-## 🔗 参考リソース
+## References
 
-- [The Rust Programming Language（日本語版）](https://doc.rust-jp.rs/book-ja/)
-- [Rust By Example（日本語版）](https://doc.rust-jp.rs/rust-by-example-ja/)
-- [公式ドキュメント](https://www.rust-lang.org/learn)
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [Rust By Example](https://doc.rust-lang.org/rust-by-example/)
+- [Official Documentation](https://www.rust-lang.org/learn)
 
-Happy Coding! 🦀
+Happy Coding!
